@@ -2,16 +2,33 @@ import type { Config } from 'tailwindcss'
 
 const config: Config = {
   content: [
-    './pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      colors: {
+        paper: {
+          DEFAULT: '#f3eee2',
+          light: '#f7f2e6',
+          dark: '#e8e1cf',
+        },
+        ink: {
+          DEFAULT: '#0e0d0b',
+          soft: '#1a1814',
+          faded: '#534b3c',
+        },
+      },
+      fontFamily: {
+        blackletter: ['var(--font-blackletter)', 'serif'],
+        display: ['var(--font-display)', 'serif'],
+        serif: ['var(--font-serif)', 'Georgia', 'serif'],
+        smallcaps: ['var(--font-smallcaps)', 'serif'],
+      },
+      letterspacing: {
+        widest: '0.4em',
+      },
+      maxWidth: {
+        broadsheet: '78rem',
       },
     },
   },
