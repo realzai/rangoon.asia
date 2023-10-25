@@ -1,5 +1,64 @@
 import Masthead from './components/Masthead'
-import { Shwedagon } from './components/Engravings'
+import {
+  Shwedagon,
+  SulePagoda,
+  StrandHotel,
+  Secretariat,
+  HighCourt,
+  CityHall,
+  BogyokeMarket,
+} from './components/Engravings'
+
+const edifices = [
+  {
+    plate: 'Plate II',
+    name: 'The Sule Pagoda',
+    descriptor: 'A stúpa of greater antiquity than the city itself.',
+    body:
+      'Set at the very meeting of Sule Pagoda Road and Maha Bandoola, the octagonal stúpa is reckoned by tradition to enshrine a hair of the Buddha. About its base the city has grown up; about its base the city is most readily measured.',
+    Engraving: SulePagoda,
+  },
+  {
+    plate: 'Plate III',
+    name: 'The Strand Hotel',
+    descriptor: 'Of the Sarkies brothers; opened anno 1901.',
+    body:
+      'A long verandahed frontage upon the river road, much frequented by officers of the steamship lines and travellers in passage to the upper country. Its lounge is, of an evening, a notable resort.',
+    Engraving: StrandHotel,
+  },
+  {
+    plate: 'Plate IV',
+    name: 'The Secretariat',
+    descriptor: 'Seat of the administration of Lower Burma.',
+    body:
+      'A vast pile of red brick in the manner of the late Mr. Fowler, with twin wings and a central tower surmounted by an open dome. Its corridors house every department from the Forest Office to the Office of the Director-General of the Post.',
+    Engraving: Secretariat,
+  },
+  {
+    plate: 'Plate V',
+    name: 'The High Court',
+    descriptor: 'Where the Queen&rsquo;s justice is dispensed.',
+    body:
+      'A clock-tower in the Anglo-Indian Gothic, dominating the prospect from the Cantonment. Within, the Chief Justice and Puisne Judges sit through the heat of the day in robes inherited from a cooler latitude.',
+    Engraving: HighCourt,
+  },
+  {
+    plate: 'Plate VI',
+    name: 'The City Hall',
+    descriptor: 'Of the Indo-Saracenic order, with native pyatthat.',
+    body:
+      'A happy marriage of two manners: a classical base of arcaded verandahs surmounted by a stepped pyatthat roof, in the Burmese fashion. Lately completed by Mr. Sithu U Tin and accounted among the foremost public buildings.',
+    Engraving: CityHall,
+  },
+  {
+    plate: 'Plate VII',
+    name: 'Bogyoke Market',
+    descriptor: 'Lately Scott Market; the great bazaar.',
+    body:
+      'A long arcade where the silks of Mandalay, the lacquer of Pagán, the rubies of Mogók, and the every-day produce of the delta are gathered together under one roof of corrugated iron.',
+    Engraving: BogyokeMarket,
+  },
+]
 
 export default function Home() {
   return (
@@ -102,6 +161,47 @@ export default function Home() {
             </p>
             <p className="mt-3 text-right font-display italic">&mdash; J. P. M.</p>
           </div>
+        </div>
+      </section>
+
+      {/* ─── Notable Edifices ─── */}
+      <section className="mt-20">
+        <div className="rule-double" />
+        <div className="mt-6 text-center">
+          <div className="font-smallcaps text-[11px] uppercase tracking-[0.4em] text-ink-faded">
+            &mdash;&nbsp;&nbsp;Section the Second&nbsp;&nbsp;&mdash;
+          </div>
+          <h2 className="mt-3 font-display text-4xl font-black uppercase tracking-tight sm:text-6xl">
+            Notable Edifices of the City
+          </h2>
+          <p className="mx-auto mt-3 max-w-2xl font-display text-base italic text-ink-soft sm:text-lg">
+            With illustrations rendered upon the wood by our staff engraver,
+            from sketches taken upon the ground.
+          </p>
+        </div>
+
+        <div className="mt-10 grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3 lg:gap-x-8 lg:gap-y-12">
+          {edifices.map(({ plate, name, descriptor, body, Engraving }) => (
+            <article key={name} className="border border-ink bg-paper-light">
+              <div className="border-b border-ink p-4">
+                <Engraving className="block h-auto w-full" />
+              </div>
+              <div className="p-4">
+                <div className="font-smallcaps text-[10px] uppercase tracking-[0.3em] text-ink-faded">
+                  {plate}
+                </div>
+                <h3 className="mt-1 font-display text-2xl font-bold uppercase leading-tight">
+                  {name}
+                </h3>
+                <p
+                  className="mt-1 font-display text-sm italic text-ink-soft"
+                  dangerouslySetInnerHTML={{ __html: descriptor }}
+                />
+                <div className="rule-thin my-3" />
+                <p className="text-justify text-[14px] leading-snug">{body}</p>
+              </div>
+            </article>
+          ))}
         </div>
       </section>
     </main>
