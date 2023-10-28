@@ -204,6 +204,208 @@ export default function Home() {
           ))}
         </div>
       </section>
+
+      {/* ─── Quarters of the City ─── */}
+      <section className="mt-20">
+        <div className="rule-double" />
+        <div className="mt-6 text-center">
+          <div className="font-smallcaps text-[11px] uppercase tracking-[0.4em] text-ink-faded">
+            &mdash;&nbsp;&nbsp;Section the Third&nbsp;&nbsp;&mdash;
+          </div>
+          <h2 className="mt-3 font-display text-4xl font-black uppercase tracking-tight sm:text-6xl">
+            Quarters of the City
+          </h2>
+          <p className="mx-auto mt-3 max-w-2xl font-display text-base italic text-ink-soft sm:text-lg">
+            An index of the principal townships, with the page upon which a
+            fuller description may be found.
+          </p>
+        </div>
+
+        <div className="mx-auto mt-10 grid max-w-5xl grid-cols-1 gap-x-12 gap-y-2 sm:grid-cols-2">
+          {[
+            {
+              name: 'Pabedan',
+              descriptor: 'The mercantile heart; godowns and counting-houses.',
+              page: 'p. 4',
+            },
+            {
+              name: 'Kyauktada',
+              descriptor: 'The seat of justice and the offices of the Crown.',
+              page: 'p. 7',
+            },
+            {
+              name: 'Lanmadaw',
+              descriptor: 'Old timber-yards along the river; the boatmen&rsquo;s quarter.',
+              page: 'p. 9',
+            },
+            {
+              name: 'Latha',
+              descriptor: 'The Chinese town, of arcaded shop-houses and lantern-makers.',
+              page: 'p. 10',
+            },
+            {
+              name: 'Pazundaung',
+              descriptor: 'A creek-side quarter of rice-mills and bullock-carts.',
+              page: 'p. 12',
+            },
+            {
+              name: 'Bahan',
+              descriptor: 'Beneath the Shwe Dagón; lakes, gardens, and bungalows.',
+              page: 'p. 13',
+            },
+            {
+              name: 'Sanchaung',
+              descriptor: 'Of mango-groves and the older monasteries.',
+              page: 'p. 15',
+            },
+            {
+              name: 'Insein',
+              descriptor: 'The railway works and the engine-sheds.',
+              page: 'p. 16',
+            },
+          ].map(({ name, descriptor, page }) => (
+            <div key={name} className="border-b border-dotted border-ink-faded pb-2 pt-1">
+              <div className="flex items-baseline">
+                <span className="font-display text-xl font-bold uppercase tracking-wide">
+                  {name}
+                </span>
+                <span
+                  className="mx-3 flex-1"
+                  style={{
+                    backgroundImage:
+                      'radial-gradient(circle, #534b3c 1px, transparent 1.4px)',
+                    backgroundPosition: 'left bottom 0.35em',
+                    backgroundSize: '6px 6px',
+                    backgroundRepeat: 'repeat-x',
+                    height: '1em',
+                  }}
+                />
+                <span className="font-smallcaps text-[12px] uppercase tracking-widest text-ink-faded">
+                  {page}
+                </span>
+              </div>
+              <p
+                className="mt-0.5 font-display text-sm italic text-ink-soft"
+                dangerouslySetInnerHTML={{ __html: descriptor }}
+              />
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* ─── Almanack & Weather ─── */}
+      <section className="mt-20">
+        <div className="rule-double" />
+        <div className="mt-6 text-center">
+          <div className="font-smallcaps text-[11px] uppercase tracking-[0.4em] text-ink-faded">
+            &mdash;&nbsp;&nbsp;Section the Fourth&nbsp;&nbsp;&mdash;
+          </div>
+          <h2 className="mt-3 font-display text-4xl font-black uppercase tracking-tight sm:text-6xl">
+            Almanack &amp; Weather
+          </h2>
+        </div>
+
+        <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-3">
+          {/* Weather */}
+          <article className="border border-ink p-5">
+            <div className="text-center font-smallcaps text-[11px] uppercase tracking-[0.3em] text-ink-faded">
+              Observations at the Cantonment
+            </div>
+            <div className="rule-thin my-3" />
+            <dl className="grid grid-cols-2 gap-y-1 font-serif text-[14px]">
+              <dt className="italic">Air, at noon</dt>
+              <dd className="text-right">88°&nbsp;F.</dd>
+              <dt className="italic">Air, at sunrise</dt>
+              <dd className="text-right">74°&nbsp;F.</dd>
+              <dt className="italic">Barometer</dt>
+              <dd className="text-right">29.84&nbsp;in.</dd>
+              <dt className="italic">Wind</dt>
+              <dd className="text-right">S.W., light</dd>
+              <dt className="italic">Sky</dt>
+              <dd className="text-right">o&rsquo;ercast</dd>
+              <dt className="italic">Rainfall, last 24h</dt>
+              <dd className="text-right">0.42&nbsp;in.</dd>
+            </dl>
+            <div className="rule-thin my-3" />
+            <p className="text-center font-display text-sm italic text-ink-soft">
+              The south-west monsoon is by general report withdrawing.
+            </p>
+          </article>
+
+          {/* Tides */}
+          <article className="border border-ink p-5">
+            <div className="text-center font-smallcaps text-[11px] uppercase tracking-[0.3em] text-ink-faded">
+              Tides on the Hlaing
+            </div>
+            <div className="rule-thin my-3" />
+            <table className="w-full font-serif text-[14px]">
+              <thead>
+                <tr className="border-b border-ink">
+                  <th className="py-1 text-left font-smallcaps text-[10px] uppercase tracking-widest text-ink-faded">
+                    &nbsp;
+                  </th>
+                  <th className="py-1 text-right font-smallcaps text-[10px] uppercase tracking-widest text-ink-faded">
+                    Hr.
+                  </th>
+                  <th className="py-1 text-right font-smallcaps text-[10px] uppercase tracking-widest text-ink-faded">
+                    Ft.
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td className="py-1 italic">High water</td>
+                  <td className="text-right tabular-nums">03 : 42</td>
+                  <td className="text-right tabular-nums">17.4</td>
+                </tr>
+                <tr>
+                  <td className="py-1 italic">Low water</td>
+                  <td className="text-right tabular-nums">09 : 58</td>
+                  <td className="text-right tabular-nums">3.1</td>
+                </tr>
+                <tr>
+                  <td className="py-1 italic">High water</td>
+                  <td className="text-right tabular-nums">16 : 11</td>
+                  <td className="text-right tabular-nums">18.0</td>
+                </tr>
+                <tr>
+                  <td className="py-1 italic">Low water</td>
+                  <td className="text-right tabular-nums">22 : 27</td>
+                  <td className="text-right tabular-nums">2.6</td>
+                </tr>
+              </tbody>
+            </table>
+            <div className="rule-thin my-3" />
+            <p className="text-center font-display text-sm italic text-ink-soft">
+              Pilots are warned of the shifting bar at Elephant Point.
+            </p>
+          </article>
+
+          {/* Almanack */}
+          <article className="border border-ink p-5">
+            <div className="text-center font-smallcaps text-[11px] uppercase tracking-[0.3em] text-ink-faded">
+              Almanack
+            </div>
+            <div className="rule-thin my-3" />
+            <dl className="grid grid-cols-2 gap-y-1 font-serif text-[14px]">
+              <dt className="italic">Sun rises</dt>
+              <dd className="text-right tabular-nums">05 : 51</dd>
+              <dt className="italic">Sun sets</dt>
+              <dd className="text-right tabular-nums">17 : 38</dd>
+              <dt className="italic">Moon</dt>
+              <dd className="text-right">Waxing gibbous</dd>
+              <dt className="italic">Sabbath day</dt>
+              <dd className="text-right">Thadingyut full</dd>
+            </dl>
+            <div className="rule-thin my-3" />
+            <p className="font-display text-sm italic text-ink-soft">
+              Observances: the Festival of Lights upon the morrow. The terraces
+              of the Pagoda will be illuminated from sunset until the second
+              watch.
+            </p>
+          </article>
+        </div>
+      </section>
     </main>
   )
 }
