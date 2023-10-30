@@ -406,6 +406,188 @@ export default function Home() {
           </article>
         </div>
       </section>
+
+      {/* ─── Classifieds & Notices ─── */}
+      <section className="mt-20">
+        <div className="rule-double" />
+        <div className="mt-6 text-center">
+          <div className="font-smallcaps text-[11px] uppercase tracking-[0.4em] text-ink-faded">
+            &mdash;&nbsp;&nbsp;Section the Fifth&nbsp;&nbsp;&mdash;
+          </div>
+          <h2 className="mt-3 font-display text-4xl font-black uppercase tracking-tight sm:text-6xl">
+            Classifieds &amp; Notices
+          </h2>
+          <p className="mx-auto mt-3 max-w-2xl font-display text-base italic text-ink-soft sm:text-lg">
+            Inserted by paying advertisers; the Editor disclaims all
+            responsibility for the contents thereof.
+          </p>
+        </div>
+
+        <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {/* WANTED */}
+          <article className="border-[3px] border-double border-ink p-5">
+            <div className="text-center font-display text-3xl font-black uppercase tracking-widest">
+              Wanted
+            </div>
+            <div className="rule-thin my-3" />
+            <p className="text-justify text-[14px] leading-snug">
+              An assistant clerk, of sober habits and a fair hand, for the
+              counting-house of <span className="italic">Messrs. Steel Brothers &amp; Co.</span>,
+              Strand Road. Knowledge of double-entry book-keeping indispensable;
+              of Hindustani, an advantage. Apply, with testimonials, before the
+              30th instant.
+            </p>
+          </article>
+
+          {/* TO LET */}
+          <article className="border-[3px] border-double border-ink p-5">
+            <div className="text-center font-display text-3xl font-black uppercase tracking-widest">
+              To Let
+            </div>
+            <div className="rule-thin my-3" />
+            <p className="text-justify text-[14px] leading-snug">
+              A commodious bungalow upon the Lake at Kandawgyi: six bedrooms,
+              wide verandahs, kitchen and out-houses detached, a tank for
+              bathing, and a compound planted to mango. Sub-let by an officer
+              proceeding on furlough. Terms moderate to a respectable family.
+            </p>
+          </article>
+
+          {/* FOR SALE */}
+          <article className="border-[3px] border-double border-ink p-5">
+            <div className="text-center font-display text-3xl font-black uppercase tracking-widest">
+              For Sale
+            </div>
+            <div className="rule-thin my-3" />
+            <p className="text-justify text-[14px] leading-snug">
+              A consignment of squared teak from the Pyinmana forests, of the
+              first quality, suitable for ship&rsquo;s timbers or the
+              construction of bungalows. Will be sold by public auction at the
+              Custom House jetty on Tuesday, the 31st, at ten of the morning.
+            </p>
+          </article>
+
+          {/* STEAMSHIP NOTICE */}
+          <article className="border-[3px] border-double border-ink p-5">
+            <div className="text-center font-display text-3xl font-black uppercase tracking-widest">
+              Steamship
+            </div>
+            <div className="rule-thin my-3" />
+            <p className="text-justify text-[14px] leading-snug">
+              The <span className="italic">S.S. Java</span> of the British India
+              Line will sail for Calcutta and Madras on Thursday next, the
+              26th, at 4 p.m. precisely. Cargo received until noon of the 25th.
+              Cabin passages to be secured at the Office, No. 12 Strand.
+            </p>
+          </article>
+
+          {/* PUBLIC LECTURE */}
+          <article className="border-[3px] border-double border-ink p-5">
+            <div className="text-center font-display text-3xl font-black uppercase tracking-widest">
+              Lecture
+            </div>
+            <div className="rule-thin my-3" />
+            <p className="text-justify text-[14px] leading-snug">
+              The <span className="italic">Asiatic Society of Burma</span> will
+              meet at the Bernard Free Library on Friday at half past six.
+              Paper to be read by Dr.&nbsp;Forchhammer, &ldquo;Upon the
+              inscriptions of the Mon kingdom of Pegu.&rdquo; Visitors admitted.
+            </p>
+          </article>
+
+          {/* CAUTIONARY */}
+          <article className="border-[3px] border-double border-ink p-5">
+            <div className="text-center font-display text-3xl font-black uppercase tracking-widest">
+              Caution
+            </div>
+            <div className="rule-thin my-3" />
+            <p className="text-justify text-[14px] leading-snug">
+              The public is hereby warned that certain persons in the bazaars
+              of Pazundaung have been observed to offer bills purporting to
+              bear the signature of the undersigned. All such are forgeries.
+              <span className="block mt-1 text-right italic">
+                &mdash; H. R. Anderson, Manager.
+              </span>
+            </p>
+          </article>
+        </div>
+      </section>
+
+      {/* ─── Footer Colophon ─── */}
+      <footer className="mt-24">
+        <div className="rule-double" />
+        <div className="rule-thin mt-1" />
+
+        <div className="mt-8 grid grid-cols-1 items-start gap-8 md:grid-cols-3">
+          {/* left: printer's mark */}
+          <div className="text-center md:text-left">
+            <svg
+              viewBox="0 0 80 80"
+              xmlns="http://www.w3.org/2000/svg"
+              className="mx-auto h-20 w-20 md:mx-0"
+              role="img"
+              aria-label="Printer&apos;s mark"
+            >
+              <g fill="#0e0d0b">
+                <circle cx="40" cy="40" r="38" fill="none" stroke="#0e0d0b" strokeWidth="1.2" />
+                <circle cx="40" cy="40" r="32" fill="none" stroke="#0e0d0b" strokeWidth="1" />
+                <text
+                  x="40"
+                  y="46"
+                  textAnchor="middle"
+                  fontFamily="serif"
+                  fontStyle="italic"
+                  fontWeight="700"
+                  fontSize="22"
+                >
+                  RG
+                </text>
+              </g>
+            </svg>
+            <div className="mt-2 font-smallcaps text-[10px] uppercase tracking-[0.3em] text-ink-faded">
+              Printer&rsquo;s Mark
+            </div>
+          </div>
+
+          {/* center: imprint */}
+          <div className="text-center font-serif">
+            <div className="font-blackletter text-2xl">The Rangoon Gazette</div>
+            <p className="mt-2 text-[14px] leading-snug">
+              Printed and published every weekday at
+              <br />
+              The Press of Hanthawaddy &amp; Co.,
+              <br />
+              No.&nbsp;39, Phayre Street, Rangoon.
+            </p>
+            <p className="mt-3 font-display text-sm italic text-ink-soft">
+              Subscriptions: One Rupee per quarter, post paid.
+            </p>
+          </div>
+
+          {/* right: editorial */}
+          <div className="text-center font-serif md:text-right">
+            <div className="font-smallcaps text-[10px] uppercase tracking-[0.3em] text-ink-faded">
+              Editorial Offices
+            </div>
+            <p className="mt-1 text-[14px] leading-snug">
+              Editor &mdash; Mr. J. P. Maitland
+              <br />
+              Sub-editor &mdash; Mr. Maung Tin
+              <br />
+              Engraver &mdash; Mr. Saya San
+            </p>
+            <p className="mt-3 font-display text-sm italic text-ink-soft">
+              All correspondence to the Editor.
+            </p>
+          </div>
+        </div>
+
+        <div className="rule-thin mt-10" />
+        <div className="py-4 text-center font-smallcaps text-[10px] uppercase tracking-[0.4em] text-ink-faded">
+          Set in the type of the Press &middot; Composed by hand &middot;
+          Printed upon paper of the country
+        </div>
+      </footer>
     </main>
   )
 }
