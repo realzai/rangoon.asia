@@ -1,4 +1,5 @@
 import Masthead from './components/Masthead'
+import { HairRule, SectionDivider } from './components/Ornaments'
 import {
   Shwedagon,
   SulePagoda,
@@ -66,23 +67,18 @@ export default function Home() {
       <Masthead />
 
       {/* ─── The Leading Article ─── */}
-      <section className="mt-10">
-        <div className="text-center">
-          <div className="font-smallcaps text-[11px] uppercase tracking-[0.4em] text-ink-faded">
-            &mdash;&nbsp;&nbsp;The Leading Article&nbsp;&nbsp;&mdash;
-          </div>
-          <h2 className="mt-3 font-display text-5xl font-black uppercase leading-[1.05] tracking-tight sm:text-7xl">
-            Of the Golden City
-            <br />
-            upon the Irrawaddy
-          </h2>
-          <p className="mx-auto mt-4 max-w-2xl font-display text-lg italic text-ink-soft sm:text-xl">
-            Wherein we render an account of the Pagodas, the bazaars, and the
-            European quarter, lately enlarged by the Public Works.
-          </p>
-          <div className="mt-4 font-smallcaps text-[11px] uppercase tracking-[0.3em] text-ink-faded">
-            From Our Resident Correspondent &middot; Phayre Street, the 22nd inst.
-          </div>
+      <section className="mt-12">
+        <SectionDivider
+          eyebrow="The Leading Article"
+          title={
+            // Slight HTML break — passed as a string fragment via children-style title
+            // but our component takes a string. Render the title literally.
+            'Of the Golden City upon the Irrawaddy'
+          }
+          deck="Wherein we render an account of the Pagodas, the bazaars, and the European quarter, lately enlarged by the Public Works."
+        />
+        <div className="mt-2 text-center font-smallcaps text-[11px] uppercase tracking-[0.3em] text-ink-faded">
+          From Our Resident Correspondent &middot; Phayre Street, the 22nd inst.
         </div>
 
         <div className="rule-thin mt-6" />
@@ -165,20 +161,13 @@ export default function Home() {
       </section>
 
       {/* ─── Notable Edifices ─── */}
-      <section className="mt-20">
-        <div className="rule-double" />
-        <div className="mt-6 text-center">
-          <div className="font-smallcaps text-[11px] uppercase tracking-[0.4em] text-ink-faded">
-            &mdash;&nbsp;&nbsp;Section the Second&nbsp;&nbsp;&mdash;
-          </div>
-          <h2 className="mt-3 font-display text-4xl font-black uppercase tracking-tight sm:text-6xl">
-            Notable Edifices of the City
-          </h2>
-          <p className="mx-auto mt-3 max-w-2xl font-display text-base italic text-ink-soft sm:text-lg">
-            With illustrations rendered upon the wood by our staff engraver,
-            from sketches taken upon the ground.
-          </p>
-        </div>
+      <HairRule />
+      <section>
+        <SectionDivider
+          eyebrow="Section the Second"
+          title="Notable Edifices of the City"
+          deck="With illustrations rendered upon the wood by our staff engraver, from sketches taken upon the ground."
+        />
 
         <div className="mt-10 grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3 lg:gap-x-8 lg:gap-y-12">
           {edifices.map(({ plate, name, descriptor, body, Engraving }) => (
@@ -206,20 +195,13 @@ export default function Home() {
       </section>
 
       {/* ─── Quarters of the City ─── */}
-      <section className="mt-20">
-        <div className="rule-double" />
-        <div className="mt-6 text-center">
-          <div className="font-smallcaps text-[11px] uppercase tracking-[0.4em] text-ink-faded">
-            &mdash;&nbsp;&nbsp;Section the Third&nbsp;&nbsp;&mdash;
-          </div>
-          <h2 className="mt-3 font-display text-4xl font-black uppercase tracking-tight sm:text-6xl">
-            Quarters of the City
-          </h2>
-          <p className="mx-auto mt-3 max-w-2xl font-display text-base italic text-ink-soft sm:text-lg">
-            An index of the principal townships, with the page upon which a
-            fuller description may be found.
-          </p>
-        </div>
+      <HairRule />
+      <section>
+        <SectionDivider
+          eyebrow="Section the Third"
+          title="Quarters of the City"
+          deck="An index of the principal townships, with the page upon which a fuller description may be found."
+        />
 
         <div className="mx-auto mt-10 grid max-w-5xl grid-cols-1 gap-x-12 gap-y-2 sm:grid-cols-2">
           {[
@@ -294,16 +276,12 @@ export default function Home() {
       </section>
 
       {/* ─── Almanack & Weather ─── */}
-      <section className="mt-20">
-        <div className="rule-double" />
-        <div className="mt-6 text-center">
-          <div className="font-smallcaps text-[11px] uppercase tracking-[0.4em] text-ink-faded">
-            &mdash;&nbsp;&nbsp;Section the Fourth&nbsp;&nbsp;&mdash;
-          </div>
-          <h2 className="mt-3 font-display text-4xl font-black uppercase tracking-tight sm:text-6xl">
-            Almanack &amp; Weather
-          </h2>
-        </div>
+      <HairRule />
+      <section>
+        <SectionDivider
+          eyebrow="Section the Fourth"
+          title="Almanack & Weather"
+        />
 
         <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-3">
           {/* Weather */}
@@ -408,20 +386,13 @@ export default function Home() {
       </section>
 
       {/* ─── Classifieds & Notices ─── */}
-      <section className="mt-20">
-        <div className="rule-double" />
-        <div className="mt-6 text-center">
-          <div className="font-smallcaps text-[11px] uppercase tracking-[0.4em] text-ink-faded">
-            &mdash;&nbsp;&nbsp;Section the Fifth&nbsp;&nbsp;&mdash;
-          </div>
-          <h2 className="mt-3 font-display text-4xl font-black uppercase tracking-tight sm:text-6xl">
-            Classifieds &amp; Notices
-          </h2>
-          <p className="mx-auto mt-3 max-w-2xl font-display text-base italic text-ink-soft sm:text-lg">
-            Inserted by paying advertisers; the Editor disclaims all
-            responsibility for the contents thereof.
-          </p>
-        </div>
+      <HairRule />
+      <section>
+        <SectionDivider
+          eyebrow="Section the Fifth"
+          title="Classifieds & Notices"
+          deck="Inserted by paying advertisers; the Editor disclaims all responsibility for the contents thereof."
+        />
 
         <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {/* WANTED */}
