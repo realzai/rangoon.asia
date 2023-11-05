@@ -38,8 +38,27 @@ const blackletter = UnifrakturMaguntia({
 })
 
 export const metadata: Metadata = {
-  title: 'The Rangoon Gazette',
-  description: 'A broadsheet of the city upon the Irrawaddy.',
+  title: {
+    default: 'The Rangoon Gazette',
+    template: '%s · The Rangoon Gazette',
+  },
+  description:
+    'A daily chronicle of the Golden City upon the Irrawaddy — pagodas, bazaars, the European quarter, and the almanack.',
+  openGraph: {
+    title: 'The Rangoon Gazette',
+    description:
+      'A daily chronicle of the Golden City upon the Irrawaddy.',
+    type: 'website',
+    locale: 'en_GB',
+    siteName: 'The Rangoon Gazette',
+  },
+  twitter: {
+    card: 'summary',
+    title: 'The Rangoon Gazette',
+    description:
+      'A daily chronicle of the Golden City upon the Irrawaddy.',
+  },
+  themeColor: '#f3eee2',
 }
 
 export default function RootLayout({
