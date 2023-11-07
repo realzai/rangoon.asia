@@ -172,8 +172,8 @@ export default function Home() {
         <div className="mt-10 grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3 lg:gap-x-8 lg:gap-y-12">
           {edifices.map(({ plate, name, descriptor, body, Engraving }) => (
             <article key={name} className="border border-ink bg-paper-light">
-              <div className="border-b border-ink p-4">
-                <Engraving className="block h-auto w-full" />
+              <div className="flex aspect-[8/5] items-end justify-center border-b border-ink p-4">
+                <Engraving className="block h-full w-full" />
               </div>
               <div className="p-4">
                 <div className="font-smallcaps text-[10px] uppercase tracking-[0.3em] text-ink-faded">

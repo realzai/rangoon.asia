@@ -94,7 +94,7 @@ export function Shwedagon({ className, title = 'The Shwe Dagón Pagoda' }: Engra
 
 export function SulePagoda({ className, title = 'The Sule Pagoda' }: EngravingProps) {
   return (
-    <svg viewBox="0 0 200 280" xmlns="http://www.w3.org/2000/svg" className={className} role="img" aria-label={title}>
+    <svg viewBox="0 0 200 280" preserveAspectRatio="xMidYMax meet" xmlns="http://www.w3.org/2000/svg" className={className} role="img" aria-label={title}>
       <title>{title}</title>
       <g fill="#0e0d0b" stroke="#0e0d0b">
         <rect x="0" y="262" width="200" height="2" />
@@ -131,7 +131,7 @@ export function SulePagoda({ className, title = 'The Sule Pagoda' }: EngravingPr
 export function StrandHotel({ className, title = 'The Strand Hotel' }: EngravingProps) {
   // Wide colonial frontage, three storeys, central pediment, awnings
   return (
-    <svg viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg" className={className} role="img" aria-label={title}>
+    <svg viewBox="0 0 320 180" preserveAspectRatio="xMidYMax meet" xmlns="http://www.w3.org/2000/svg" className={className} role="img" aria-label={title}>
       <title>{title}</title>
       <g fill="#0e0d0b">
         <rect x="0" y="170" width="320" height="2" />
@@ -175,7 +175,7 @@ export function StrandHotel({ className, title = 'The Strand Hotel' }: Engraving
 export function Secretariat({ className, title = 'The Secretariat' }: EngravingProps) {
   // Long Victorian wings flanking a central tower with onion dome
   return (
-    <svg viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg" className={className} role="img" aria-label={title}>
+    <svg viewBox="0 0 320 180" preserveAspectRatio="xMidYMax meet" xmlns="http://www.w3.org/2000/svg" className={className} role="img" aria-label={title}>
       <title>{title}</title>
       <g fill="#0e0d0b">
         <rect x="0" y="170" width="320" height="2" />
@@ -233,7 +233,7 @@ export function Secretariat({ className, title = 'The Secretariat' }: EngravingP
 export function HighCourt({ className, title = 'The High Court' }: EngravingProps) {
   // Brick Victorian with prominent clock tower
   return (
-    <svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg" className={className} role="img" aria-label={title}>
+    <svg viewBox="0 0 240 240" preserveAspectRatio="xMidYMax meet" xmlns="http://www.w3.org/2000/svg" className={className} role="img" aria-label={title}>
       <title>{title}</title>
       <g fill="#0e0d0b">
         <rect x="0" y="232" width="240" height="2" />
@@ -290,7 +290,7 @@ export function HighCourt({ className, title = 'The High Court' }: EngravingProp
 export function CityHall({ className, title = 'The City Hall' }: EngravingProps) {
   // Burmese-Edwardian fusion: stepped pyatthat tiered roof over a classical base
   return (
-    <svg viewBox="0 0 280 200" xmlns="http://www.w3.org/2000/svg" className={className} role="img" aria-label={title}>
+    <svg viewBox="0 0 280 200" preserveAspectRatio="xMidYMax meet" xmlns="http://www.w3.org/2000/svg" className={className} role="img" aria-label={title}>
       <title>{title}</title>
       <g fill="#0e0d0b">
         <rect x="0" y="192" width="280" height="2" />
@@ -344,7 +344,7 @@ export function CityHall({ className, title = 'The City Hall' }: EngravingProps)
 export function BogyokeMarket({ className, title = 'Bogyoke Market' }: EngravingProps) {
   // Long arcade with repeating arches and a low pediment over the central entry
   return (
-    <svg viewBox="0 0 320 150" xmlns="http://www.w3.org/2000/svg" className={className} role="img" aria-label={title}>
+    <svg viewBox="0 0 320 150" preserveAspectRatio="xMidYMax meet" xmlns="http://www.w3.org/2000/svg" className={className} role="img" aria-label={title}>
       <title>{title}</title>
       <g fill="#0e0d0b">
         <rect x="0" y="142" width="320" height="2" />
