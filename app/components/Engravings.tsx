@@ -149,11 +149,11 @@ export function StrandHotel({ className, title = 'The Strand Hotel' }: Engraving
           ))}
           {/* awning shadow line */}
           <rect x="20" y="125" width="280" height="3" />
-          {/* ground-floor arches: 11 arched openings */}
+          {/* ground-floor arches: 11 arched openings, centred in 280-wide block */}
           {Array.from({ length: 11 }).map((_, i) => (
             <path
               key={`arch-${i}`}
-              d={`M${36 + i * 24} 168 L${36 + i * 24} 145 Q${48 + i * 24} 134 ${60 + i * 24} 145 L${60 + i * 24} 168 Z`}
+              d={`M${28 + i * 24} 168 L${28 + i * 24} 145 Q${40 + i * 24} 134 ${52 + i * 24} 145 L${52 + i * 24} 168 Z`}
             />
           ))}
         </g>
@@ -203,25 +203,25 @@ export function Secretariat({ className, title = 'The Secretariat' }: EngravingP
         <path d="M294 84 L312 84 L303 70 Z" />
         {/* paper-cut windows in regular rhythm */}
         <g fill="#f3eee2">
-          {/* west wing windows */}
+          {/* west wing windows — centred in wing 10–130 (3px pad each side) */}
           {Array.from({ length: 10 }).map((_, i) => (
-            <rect key={`sw-${i}`} x={18 + i * 12} y={114} width="6" height="14" />
+            <rect key={`sw-${i}`} x={13 + i * 12} y={114} width="6" height="14" />
           ))}
           {Array.from({ length: 10 }).map((_, i) => (
-            <rect key={`sw2-${i}`} x={18 + i * 12} y={140} width="6" height="14" />
+            <rect key={`sw2-${i}`} x={13 + i * 12} y={140} width="6" height="14" />
           ))}
-          {/* east wing windows */}
+          {/* east wing windows — centred in wing 190–310 (3px pad each side) */}
           {Array.from({ length: 10 }).map((_, i) => (
-            <rect key={`se-${i}`} x={198 + i * 12} y={114} width="6" height="14" />
+            <rect key={`se-${i}`} x={193 + i * 12} y={114} width="6" height="14" />
           ))}
           {Array.from({ length: 10 }).map((_, i) => (
-            <rect key={`se2-${i}`} x={198 + i * 12} y={140} width="6" height="14" />
+            <rect key={`se2-${i}`} x={193 + i * 12} y={140} width="6" height="14" />
           ))}
-          {/* central windows */}
-          <rect x="135" y="100" width="8" height="20" />
-          <rect x="151" y="100" width="8" height="20" />
-          <rect x="167" y="100" width="8" height="20" />
-          <rect x="183" y="100" width="8" height="20" />
+          {/* central windows — centred in central block 125–195 */}
+          <rect x="132" y="100" width="8" height="20" />
+          <rect x="148" y="100" width="8" height="20" />
+          <rect x="164" y="100" width="8" height="20" />
+          <rect x="180" y="100" width="8" height="20" />
           {/* tower window */}
           <rect x="156" y="56" width="8" height="14" />
         </g>
@@ -317,17 +317,18 @@ export function CityHall({ className, title = 'The City Hall' }: EngravingProps)
         </g>
         {/* paper-cut elements */}
         <g fill="#f3eee2">
-          {/* base columns/arches */}
+          {/* base columns/arches — left, fitted to area 20–100 */}
           {Array.from({ length: 5 }).map((_, i) => (
             <path
               key={`ch-arch-${i}`}
-              d={`M${30 + i * 16} 188 L${30 + i * 16} 162 Q${37 + i * 16} 152 ${44 + i * 16} 162 L${44 + i * 16} 188 Z`}
+              d={`M${22 + i * 16} 188 L${22 + i * 16} 162 Q${29 + i * 16} 152 ${36 + i * 16} 162 L${36 + i * 16} 188 Z`}
             />
           ))}
+          {/* base columns/arches — right, fitted to area 180–260 */}
           {Array.from({ length: 5 }).map((_, i) => (
             <path
               key={`ch-arch-r-${i}`}
-              d={`M${190 + i * 16} 188 L${190 + i * 16} 162 Q${197 + i * 16} 152 ${204 + i * 16} 162 L${204 + i * 16} 188 Z`}
+              d={`M${182 + i * 16} 188 L${182 + i * 16} 162 Q${189 + i * 16} 152 ${196 + i * 16} 162 L${196 + i * 16} 188 Z`}
             />
           ))}
           {/* central entrance */}
