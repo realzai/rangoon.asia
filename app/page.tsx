@@ -114,13 +114,25 @@ export default function Home() {
               &mdash; rises from the northern ridge to a height of three hundred
               and twenty-six feet. Its terraces, mounted by long flights of
               weather-worn steps, are thronged from dawn till dusk by pilgrims
-              of every condition: the merchant from Mandalay, the cultivator
-              from the delta, the Shan trader newly arrived by river-boat.
+              of every condition.
             </p>
             <p className="mt-3 text-justify text-[15px] leading-snug">
               Around the central stúpa cluster some sixty subsidiary shrines,
               their gilded pinnacles catching the light of the morning in a
               manner not easily forgotten by any who have witnessed it.
+            </p>
+            <p className="mt-3 text-justify text-[15px] leading-snug">
+              Bells of beaten brass, suspended from the eaves of the lesser
+              pavilions, sound at the lightest touch of the wind.
+            </p>
+            <p className="mt-3 text-justify text-[15px] leading-snug">
+              At evening the pilgrims descend with lighted tapers, and the
+              terraces are reduced to a moving constellation of small flames.
+            </p>
+            <p className="mt-3 text-justify text-[15px] leading-snug">
+              From the highest terrace, the eye commands a prospect that has
+              few equals in the East. And above all glitters the great gilded
+              Pagoda, like a beacon over the wide delta plain.
             </p>
           </div>
 
@@ -128,17 +140,30 @@ export default function Home() {
           <div className="lg:border-r lg:border-ink lg:pr-6">
             <p className="text-justify text-[15px] leading-snug">
               The European quarter, between the river and the Cantonment, has of
-              late assumed an aspect altogether changed. The Strand, once a riot
-              of warehouses and palm-leaf sheds, presents now a frontage of
-              stone and stucco, broken at intervals by arcaded verandahs in the
-              Italian manner. The new Custom House, the Gymkhana, and the
-              offices of the Irrawaddy Flotilla bear witness to the energy of
-              the Public Works Department.
+              late assumed an aspect altogether changed. The Strand presents
+              now a frontage of stone and stucco, broken at intervals by
+              arcaded verandahs in the Italian manner.
             </p>
             <p className="mt-3 text-justify text-[15px] leading-snug">
               Phayre Street, named for the late Sir Arthur, is now metalled
               throughout its length, and may be perambulated of an evening
               without the inconvenience formerly attendant upon the monsoon.
+            </p>
+            <p className="mt-3 text-justify text-[15px] leading-snug">
+              The new offices of the Bombay Burmah Trading Corporation, lately
+              completed in stone, are reckoned the finest commercial pile this
+              side of Calcutta.
+            </p>
+            <p className="mt-3 text-justify text-[15px] leading-snug">
+              Of an evening the band of the regiment plays upon the maidan,
+              while officers and ladies promenade beside the parade.
+            </p>
+            <p className="mt-3 text-justify text-[15px] leading-snug">
+              The chime of the new High Court clock is heard, when the wind
+              favours, as far as the wharf of the Flotilla. The carriages of
+              the principal residents are drawn up beside the parade, where
+              the airs of Mr.&nbsp;Sullivan and Signor Verdi may yet be heard
+              above the murmur of the crowd.
             </p>
           </div>
 
@@ -154,6 +179,19 @@ export default function Home() {
               the longyi keep their ancient ways; the betel-seller squats at
               his stall; the bell-rope of a wooden monastery stirs at the touch
               of an unseen hand.
+            </p>
+            <p className="mt-3 text-justify text-[15px] leading-snug">
+              In the bazaar of Theingyi the Indian cloth-merchant displays his
+              bales of Madras chintz beside the lacquer of the Burman.
+            </p>
+            <p className="mt-3 text-justify text-[15px] leading-snug">
+              At dusk the lamps are lit along Maha Bandoola Street, and the
+              city goes about its two lives, ancient and modern, in a single
+              compass.
+            </p>
+            <p className="mt-3 text-justify text-[15px] leading-snug">
+              The traveller, lingering upon the bund at evening, feels himself
+              for a while the contemporary of every age.
             </p>
             <p className="mt-3 text-right font-display italic">&mdash; J. P. M.</p>
           </div>
