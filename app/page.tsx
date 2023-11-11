@@ -423,103 +423,115 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ─── Classifieds & Notices ─── */}
+      {/* ─── Of the University & Her Students ─── */}
       <HairRule />
       <section>
         <SectionDivider
           eyebrow="Section the Fifth"
-          title="Classifieds & Notices"
-          deck="Inserted by paying advertisers; the Editor disclaims all responsibility for the contents thereof."
+          title="Of the University & Her Students"
+          deck="Wherein we recount the foundation of the University of Rangoon, and those movements of her students which have, in every generation, shaped the political life of the country."
         />
 
-        <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {/* WANTED */}
-          <article className="border-[3px] border-double border-ink p-5">
-            <div className="text-center font-display text-3xl font-black uppercase tracking-widest">
-              Wanted
-            </div>
-            <div className="rule-thin my-3" />
-            <p className="text-justify text-[14px] leading-snug">
-              An assistant clerk, of sober habits and a fair hand, for the
-              counting-house of <span className="italic">Messrs. Steel Brothers &amp; Co.</span>,
-              Strand Road. Knowledge of double-entry book-keeping indispensable;
-              of Hindustani, an advantage. Apply, with testimonials, before the
-              30th instant.
-            </p>
-          </article>
-
-          {/* TO LET */}
-          <article className="border-[3px] border-double border-ink p-5">
-            <div className="text-center font-display text-3xl font-black uppercase tracking-widest">
-              To Let
-            </div>
-            <div className="rule-thin my-3" />
-            <p className="text-justify text-[14px] leading-snug">
-              A commodious bungalow upon the Lake at Kandawgyi: six bedrooms,
-              wide verandahs, kitchen and out-houses detached, a tank for
-              bathing, and a compound planted to mango. Sub-let by an officer
-              proceeding on furlough. Terms moderate to a respectable family.
-            </p>
-          </article>
-
-          {/* FOR SALE */}
-          <article className="border-[3px] border-double border-ink p-5">
-            <div className="text-center font-display text-3xl font-black uppercase tracking-widest">
-              For Sale
-            </div>
-            <div className="rule-thin my-3" />
-            <p className="text-justify text-[14px] leading-snug">
-              A consignment of squared teak from the Pyinmana forests, of the
-              first quality, suitable for ship&rsquo;s timbers or the
-              construction of bungalows. Will be sold by public auction at the
-              Custom House jetty on Tuesday, the 31st, at ten of the morning.
-            </p>
-          </article>
-
-          {/* STEAMSHIP NOTICE */}
-          <article className="border-[3px] border-double border-ink p-5">
-            <div className="text-center font-display text-3xl font-black uppercase tracking-widest">
-              Steamship
-            </div>
-            <div className="rule-thin my-3" />
-            <p className="text-justify text-[14px] leading-snug">
-              The <span className="italic">S.S. Java</span> of the British India
-              Line will sail for Calcutta and Madras on Thursday next, the
-              26th, at 4 p.m. precisely. Cargo received until noon of the 25th.
-              Cabin passages to be secured at the Office, No. 12 Strand.
-            </p>
-          </article>
-
-          {/* PUBLIC LECTURE */}
-          <article className="border-[3px] border-double border-ink p-5">
-            <div className="text-center font-display text-3xl font-black uppercase tracking-widest">
-              Lecture
-            </div>
-            <div className="rule-thin my-3" />
-            <p className="text-justify text-[14px] leading-snug">
-              The <span className="italic">Asiatic Society of Burma</span> will
-              meet at the Bernard Free Library on Friday at half past six.
-              Paper to be read by Dr.&nbsp;Forchhammer, &ldquo;Upon the
-              inscriptions of the Mon kingdom of Pegu.&rdquo; Visitors admitted.
-            </p>
-          </article>
-
-          {/* CAUTIONARY */}
-          <article className="border-[3px] border-double border-ink p-5">
-            <div className="text-center font-display text-3xl font-black uppercase tracking-widest">
-              Caution
-            </div>
-            <div className="rule-thin my-3" />
-            <p className="text-justify text-[14px] leading-snug">
-              The public is hereby warned that certain persons in the bazaars
-              of Pazundaung have been observed to offer bills purporting to
-              bear the signature of the undersigned. All such are forgeries.
-              <span className="block mt-1 text-right italic">
-                &mdash; H. R. Anderson, Manager.
-              </span>
-            </p>
-          </article>
+        {/* Lead — two-column setting with drop cap */}
+        <div className="mt-10 grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-10">
+          <p className="text-justify text-[15px] leading-snug">
+            <span className="float-left mr-2 mt-1 font-display text-[5.25rem] font-black leading-[0.78] text-ink">
+              F
+            </span>
+            ounded in the year 1878 as Rangoon College, an affiliate of the
+            University of Calcutta, and elevated to a University in its own
+            right by the Act of 1920, the University of Rangoon has stood at
+            the centre of the political life of the country no less than at
+            the centre of its learning. Its precincts in Kamayut, set about
+            the still waters of the Adipati Lake, encompass the Convocation
+            Hall, the great Library, and the halls of residence in which a
+            generation of nationalists came of age.
+          </p>
+          <p className="text-justify text-[15px] leading-snug">
+            Within these halls have studied General Aung San, Mr.&nbsp;U Nu,
+            Mr.&nbsp;U Thant, and the greater part of those who, in this
+            century, have shaped the destiny of the nation. The Rangoon
+            University Students&rsquo; Union, founded in 1931 in a modest
+            building beside the Convocation Hall, has been the cradle of every
+            nationalist movement of consequence; and from its grounds, in
+            every generation, the call has gone out for the freedom of Burma.
+          </p>
         </div>
+
+        {/* Timeline — five date cards */}
+        <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-5 lg:gap-4">
+          {[
+            {
+              year: 'MCMXX',
+              gregorian: '1920',
+              month: 'December',
+              title: 'The First Boycott',
+              body:
+                'In protest at the new University Act, which the students reckoned framed to keep higher learning the preserve of the few, the scholars of Rangoon College quit their classes and gathered upon the lawns of the Shwe Dagón. The strike spread the breadth of the country; the fifth of December is now appointed National Day.',
+            },
+            {
+              year: 'MCMXXXVI',
+              gregorian: '1936',
+              month: 'February',
+              title: 'The Second Strike',
+              body:
+                'Following the expulsion of Mr. Aung San, then editor of the student journal Oway, the students again left their lecture-halls. From this strike emerged the Rangoon University Students’ Union as a power to be reckoned with in the political life of the country.',
+            },
+            {
+              year: 'MCMLXII',
+              gregorian: '1962',
+              month: 'July',
+              title: 'The Union Demolished',
+              body:
+                'After student protest against the new military government, the Students’ Union building — long the cradle of every nationalist movement — was reduced to rubble by dynamite upon the seventh of the month. The act marked the close of an open political era.',
+            },
+            {
+              year: 'MCMLXXIV',
+              gregorian: '1974',
+              month: 'December',
+              title: 'The Funeral of U Thant',
+              body:
+                'On the death of Mr. U Thant, lately Secretary-General of the United Nations, the State withholding due honours, the students of the University seized his coffin and built a mausoleum upon the campus. The army was sent in to disperse them.',
+            },
+            {
+              year: 'MCMLXXXVIII',
+              gregorian: '1988',
+              month: 'August',
+              title: 'The Eighth Day of the Eighth',
+              body:
+                'On the eighth day of the eighth month, the students of the Rangoon Institute of Technology issued the call. Within the week the cities of Burma rose with them in their hundreds of thousands, and a generation took its place in the long succession.',
+            },
+          ].map(({ year, gregorian, month, title, body }) => (
+            <article
+              key={gregorian}
+              className="flex flex-col border border-ink bg-paper-light"
+            >
+              <header className="border-b border-ink px-4 py-3 text-center">
+                <div className="font-smallcaps text-[10px] uppercase tracking-[0.3em] text-ink-faded">
+                  Anno {year}
+                </div>
+                <div className="mt-1 font-display text-3xl font-black tabular-nums">
+                  {gregorian}
+                </div>
+                <div className="mt-1 font-display text-sm italic text-ink-soft">
+                  {month}
+                </div>
+              </header>
+              <div className="flex-1 p-4">
+                <h3 className="font-display text-base font-bold uppercase leading-tight">
+                  {title}
+                </h3>
+                <div className="rule-thin my-3" />
+                <p className="text-justify text-[13.5px] leading-snug">{body}</p>
+              </div>
+            </article>
+          ))}
+        </div>
+
+        <p className="mx-auto mt-10 max-w-3xl text-center font-display text-base italic text-ink-soft">
+          &ldquo;Where the students of Rangoon have led, the country has not
+          long delayed in following.&rdquo;
+        </p>
       </section>
 
       {/* ─── Footer Colophon ─── */}
