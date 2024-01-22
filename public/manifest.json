@@ -1,0 +1,22 @@
+{
+  "name": "The Rangoon Gazette",
+  "short_name": "Rangoon",
+  "description": "A vintage broadsheet of Rangoon — the Golden City upon the Irrawaddy.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "minimal-ui",
+  "orientation": "portrait",
+  "background_color": "#f3eee2",
+  "theme_color": "#f3eee2",
+  "lang": "en-GB",
+  "dir": "ltr",
+  "categories": ["news", "lifestyle", "education"],
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
