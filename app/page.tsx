@@ -1,5 +1,5 @@
-import Masthead from './components/Masthead'
-import { HairRule, SectionDivider } from './components/Ornaments'
+import Masthead from '@/components/Masthead'
+import { HairRule, SectionDivider } from '@/components/Ornaments'
 import {
   Shwedagon,
   SulePagoda,
@@ -8,7 +8,7 @@ import {
   HighCourt,
   CityHall,
   BogyokeMarket,
-} from './components/Engravings'
+} from '@/components/Engravings'
 
 const edifices = [
   {

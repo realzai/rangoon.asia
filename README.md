@@ -46,10 +46,10 @@ app/
   opengraph-image.tsx         dynamic 1200×630 OG card
   robots.ts                   /robots.txt
   sitemap.ts                  /sitemap.xml
-  components/
-    Masthead.tsx              blackletter title, mottos, folio strip
-    Engravings.tsx            seven hand-coded SVG landmarks
-    Ornaments.tsx             fleurons, dividers, section headers
+components/
+  Masthead.tsx                blackletter title, mottos, folio strip
+  Engravings.tsx              seven hand-coded SVG landmarks
+  Ornaments.tsx               fleurons, dividers, section headers
 public/
   manifest.json               web app manifest
 tailwind.config.ts            paper / ink palette, font slots
