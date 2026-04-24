@@ -1,11 +1,24 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --color-paper: #f3eee2;
+  --color-paper-light: #f7f2e6;
+  --color-paper-dark: #e8e1cf;
+
+  --color-ink: #0e0d0b;
+  --color-ink-soft: #1a1814;
+  --color-ink-faded: #534b3c;
+
+  --font-blackletter: var(--fr-blackletter), serif;
+  --font-display: var(--fr-display), serif;
+  --font-serif: var(--fr-serif), Georgia, serif;
+  --font-smallcaps: var(--fr-smallcaps), serif;
+}
 
 html,
 body {
-  background-color: #f3eee2;
-  color: #0e0d0b;
+  background-color: var(--color-paper);
+  color: var(--color-ink);
 }
 
 body {
@@ -18,14 +31,13 @@ body {
 }
 
 ::selection {
-  background: #0e0d0b;
-  color: #f3eee2;
+  background: var(--color-ink);
+  color: var(--color-paper);
 }
 
-/* Vintage hairline rule used between sections */
 .rule-thin {
-  border-top: 1px solid #0e0d0b;
+  border-top: 1px solid var(--color-ink);
 }
 .rule-double {
-  border-top: 3px double #0e0d0b;
+  border-top: 3px double var(--color-ink);
 }

@@ -13,15 +13,16 @@ Live at **[rangoon.asia](https://rangoon.asia)**.
 
 ## Stack
 
-- [Next.js 13.5](https://nextjs.org) (App Router)
-- React 18
-- TypeScript 5
-- Tailwind CSS 3
+- [Next.js 16](https://nextjs.org) (App Router, Turbopack)
+- React 19
+- TypeScript 6
+- Tailwind CSS 4 (CSS-first `@theme` config)
+- ESLint 9 (flat config)
 - `next/font` for [IM Fell English](https://fonts.google.com/specimen/IM+Fell+English),
   [IM Fell DW Pica SC](https://fonts.google.com/specimen/IM+Fell+DW+Pica+SC),
   [Playfair Display](https://fonts.google.com/specimen/Playfair+Display),
   and [UnifrakturMaguntia](https://fonts.google.com/specimen/UnifrakturMaguntia)
-- `@vercel/og` for the OpenGraph card
+- `next/og` for the OpenGraph card
 
 No UI library, no animation library, no icon library — pure Tailwind +
 hand-coded inline SVG.
@@ -52,8 +53,12 @@ components/
   Ornaments.tsx               fleurons, dividers, section headers
 public/
   manifest.json               web app manifest
-tailwind.config.ts            paper / ink palette, font slots
+eslint.config.mjs             flat config
+postcss.config.mjs            @tailwindcss/postcss
 ```
+
+Tailwind 4 theme tokens (paper/ink palette, font slots) live in
+`app/globals.css` inside the `@theme` block.
 
 ## Design notes
 

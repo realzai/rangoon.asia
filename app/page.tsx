@@ -63,7 +63,7 @@ const edifices = [
 
 export default function Home() {
   return (
-    <main className="mx-auto max-w-broadsheet px-6 py-10">
+    <main className="mx-auto max-w-[78rem] px-6 py-10">
       <Masthead />
 
       {/* ─── The Leading Article ─── */}

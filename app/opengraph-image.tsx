@@ -1,6 +1,4 @@
-import { ImageResponse } from '@vercel/og'
-
-export const runtime = 'edge'
+import { ImageResponse } from 'next/og'
 
 export const alt = 'The Rangoon Gazette — A Daily Chronicle of the Golden City upon the Irrawaddy'
 export const size = { width: 1200, height: 630 }
@@ -32,7 +30,9 @@ export default async function OpengraphImage() {
             left: 30,
             right: 30,
             height: 0,
-            borderTop: '4px double #0e0d0b',
+            borderTopWidth: 4,
+            borderTopStyle: 'double',
+            borderTopColor: '#0e0d0b',
           }}
         />
         {/* Bottom border strip */}
@@ -43,7 +43,9 @@ export default async function OpengraphImage() {
             left: 30,
             right: 30,
             height: 0,
-            borderTop: '4px double #0e0d0b',
+            borderTopWidth: 4,
+            borderTopStyle: 'double',
+            borderTopColor: '#0e0d0b',
           }}
         />
 
@@ -74,7 +76,9 @@ export default async function OpengraphImage() {
           style={{
             width: 900,
             marginTop: 30,
-            borderTop: '2px solid #0e0d0b',
+            borderTopWidth: 2,
+            borderTopStyle: 'solid',
+            borderTopColor: '#0e0d0b',
           }}
         />
 

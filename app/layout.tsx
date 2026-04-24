@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 import {
   IM_Fell_English,
   IM_Fell_DW_Pica_SC,
@@ -11,7 +11,7 @@ const serif = IM_Fell_English({
   subsets: ['latin'],
   weight: ['400'],
   style: ['normal', 'italic'],
-  variable: '--font-serif',
+  variable: '--fr-serif',
   display: 'swap',
   adjustFontFallback: false,
 })
@@ -19,7 +19,7 @@ const serif = IM_Fell_English({
 const smallcaps = IM_Fell_DW_Pica_SC({
   subsets: ['latin'],
   weight: ['400'],
-  variable: '--font-smallcaps',
+  variable: '--fr-smallcaps',
   display: 'swap',
   adjustFontFallback: false,
 })
@@ -28,14 +28,14 @@ const display = Playfair_Display({
   subsets: ['latin'],
   weight: ['400', '700', '900'],
   style: ['normal', 'italic'],
-  variable: '--font-display',
+  variable: '--fr-display',
   display: 'swap',
 })
 
 const blackletter = UnifrakturMaguntia({
   subsets: ['latin'],
   weight: ['400'],
-  variable: '--font-blackletter',
+  variable: '--fr-blackletter',
   display: 'swap',
 })
 
@@ -101,12 +101,15 @@ export const metadata: Metadata = {
     description:
       'A vintage broadsheet of Rangoon — the Golden City upon the Irrawaddy.',
   },
-  themeColor: '#f3eee2',
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
+}
+
+export const viewport: Viewport = {
+  themeColor: '#f3eee2',
 }
 
 const jsonLd = {
